@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+.chat-container {
+  width: 100%;
+  padding: 22px;
+  display: flex;
+  background-color: rgb(71, 169, 255);
+  height: 80vh;
+}
+
+.chat-container #rooms {
+  width: 20%;
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-container #rooms .room-item {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  align-items: center;
+  background-color: blueviolet;
+  color: white;
+  border-top: 1px solid white;
+  cursor: pointer;
+  min-height: 60px;
+  overflow: hidden;
+}
+
+.chat-container #rooms .room-item:hover {
+  background-color: white;
+  color: blueviolet;
+}
+
+.chat-container #rooms .room-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.chat-container #rooms .room-item .badge {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+#chat-content {
+  width: 70%;
+  background-color: white;
+}
+
+#chat-content #chats {
+  height: 73vh;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-input input[type="text"] {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.chat-input input[type="file"] {
+  display: none;
+}
+
+.chat-input label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.chat-input label span {
+  margin-left: 5px;
+}
+
+.chat-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+}
+
+.chat-item .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.chat-item .info img {
+  background-color: black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border: 1px solid white;
+}
+
+.chat-item .info p {
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.chat-item .message .username {
+  font-size: 12px;
+  text-align: end;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.chat-item .message img {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.message-row-left {
+  width: 100%;
+  display: flex;
+}
+.message-row-right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.message-row-left .chat-item .message {
+  background-color: rgb(197, 197, 197);
+  color: black;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.message-row-right .chat-item .message {
+  background-color: blue;
+  color: white;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 18px;
+}
